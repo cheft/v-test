@@ -11,9 +11,9 @@ mut:
 fn main() {
 	mut db := mysql.Connection{
 		host: ''
-		port: 3306
+		port: 
 		username: ''
-		password: ''
+		password: '*'
 		dbname: ''
 	}
 	db.connect() or { panic(err) }
