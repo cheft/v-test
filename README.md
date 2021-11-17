@@ -1,5 +1,5 @@
 ### run
 ```shell
-v -o app src/main.v -prod
-v -o app run src/main.v
+v -o main src/main.v -prod
+v -o main run src/main.v
 ```

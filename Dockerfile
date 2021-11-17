@@ -3,9 +3,9 @@ FROM alpine:latest
 RUN apk add mariadb-connector-c-dev
 
 WORKDIR /app
-COPY orm.linux /app/orm
-RUN chmod 755 /app/orm
+COPY main /app/main
+RUN chmod 755 /app/main
 
-ENTRYPOINT ["/app/orm"]
+ENTRYPOINT ["/app/main"]
 
 # docker build -t v-test . 
